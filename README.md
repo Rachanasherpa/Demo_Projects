@@ -12,3 +12,6 @@ Generates a random number between 1 and 10,
 Let the user guess,
 Displays whether the guess is correct or not.
 
+### How to Run
+- For SQL: Run Employee_demo.sql in any SQL environment (MySQL, PostgreSQL, etc.)
+- For Python: Run Random_guess.py in terminal
