@@ -2,8 +2,8 @@
 
 ## SQL Project: Employee Database
 A simple SQL script that:-
--Creates an Employees table,
--Inserts sample records,
+-Creates an Employees table
+-Inserts sample records
 -Runs a query to filter employees by department and salary.
 
 ## Python Project: Random Number Guessing Game
