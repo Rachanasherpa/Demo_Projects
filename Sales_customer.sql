@@ -1,6 +1,6 @@
 -- Create Customers table
 CREATE TABLE Customers (
-    CustomerID int primary key ,
+    CustomerID int primary key,
     CustomerName varchar(50),
     Region varchar(50)
 );
@@ -11,11 +11,11 @@ CREATE TABLE Orders (
     CustomerID int,
     OrderDate date,
     Amount Decimal(10,2),
-    Foreign key(CustomerID) REFERENCES Customers(CustomerID)
+    Foreign key(CustomerID) references Customers(CustomerID)
 );
 
 -- Insert sample data
-INSERT INTO Customers VALUES
+INSERT INTO Customers values
 (1, 'Alice', 'North'),
 (2, 'Bob', 'South'),
 (3, 'Charlie', 'East'),
@@ -29,13 +29,13 @@ INSERT INTO Orders VALUES
 (105, 4, '2026-06-10', 900.00);
 
 -- Query 1: Total sales per region
-Select c.Region, SUM(o.Amount) as TotalSales
+Select c.Region, sum(o.Amount) as TotalSales
 from Customers c
 Join Orders o on c.CustomerID = o.CustomerID
 group by c.Region;
 
 -- Query 2: Top customer by sales
-select c.CustomerName, SUM(o.Amount) as TotalSpent
+select c.CustomerName, sum(o.Amount) as TotalSpent
 from Customers c
 Join Orders o on c.CustomerID = o.CustomerID
 group by c.CustomerName
@@ -43,7 +43,7 @@ order by TotalSpent desc
 limit 1;
 
 -- Query 3: Average order value per customer
-select c.CustomerName, AVG(o.Amount) as AvgOrderValue
+select c.CustomerName, avg(o.Amount) as AvgOrderValue
 from Customers c
 Join Orders o on c.CustomerID = o.CustomerID
 group by c.CustomerName;
