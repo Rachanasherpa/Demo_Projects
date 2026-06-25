@@ -6,6 +6,12 @@ A simple SQL script that:-
 - Inserts sample records
 - Runs a query to filter employees by department and salary.
 
+## SQL Project: 
+- Queries for:
+  - Total sales per region
+  - Top customer by sales
+  - Average order value per customer
+
 ## Python Project: Random Number Guessing Game
 A beginner-friendly Python script using the random module:
 - Generates a random number between 1 and 10
@@ -19,5 +25,6 @@ A beginner-friendly Python script using the random module:
   
 ### How to Run
 - For SQL: Run Employee_demo.sql in any SQL environment (MySQL, PostgreSQL, etc.)
+- For SQL: Run Sales_customer.sql in any SQL environment (MySQL, PostgreSQL, etc.)
 - For Python: Run Random_guess.py in terminal
 - For Python: Run Report_generator.py in terminal
