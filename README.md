@@ -12,6 +12,12 @@ A beginner-friendly Python script using the random module:
 - Let the user guess
 - Displays whether the guess is correct
 
+## Python Project: Automated Report Generator
+- Generates random transaction data
+- Saves results into a CSV file
+- Demonstrates automation and reporting concepts
+  
 ### How to Run
 - For SQL: Run Employee_demo.sql in any SQL environment (MySQL, PostgreSQL, etc.)
 - For Python: Run Random_guess.py in terminal
+- For Python: Run Report_generator.py in terminal
