@@ -6,8 +6,8 @@ A simple SQL script that:-
 - Inserts sample records
 - Runs a query to filter employees by department and salary.
 
-## SQL Project: 
-- Queries for:
+## SQL Project: Sales and Customers Insights
+- Queries for:-
   - Total sales per region
   - Top customer by sales
   - Average order value per customer
